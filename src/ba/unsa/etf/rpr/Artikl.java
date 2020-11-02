@@ -1,13 +1,13 @@
 package ba.unsa.etf.rpr;
 
 public class Artikl {
-  prtivate String naziv, kod;
+  private String naziv, kod;
   private int cijena;
   
-  public Artikl(String naziv, String kod, int cijena){
+  public Artikl(String naziv,int cijena,String kod){
     setNaziv(naziv);
-    setKod(kod);
     setCijena(cijena);
+    setKod(kod);
   }
   
   public String getNaziv(){
