@@ -2,7 +2,7 @@ package ba.unsa.etf.rpr;
 
 public class Supermarket {
   
-  private max = 1000;
+  private int max;
   private Artikl[] artikli;
   private int brArtikala;
   
@@ -13,7 +13,7 @@ public class Supermarket {
   }
   
   public boolean dodajArtikl(Artikl a){
-    if(brArtikala = max) return false;
+    if(brArtikala == max) return false;
     else {
       artikli[brArtikala] = a;
       brArtikala++;
@@ -21,7 +21,7 @@ public class Supermarket {
     }    
   }
   
-  public Artikli[] getArtikl(){
+  public Artikl[] getArtikl(){
     return artikli;
   }
   
