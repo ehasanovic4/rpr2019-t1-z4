@@ -1,14 +1,26 @@
 package ba.unsa.etf.rpr;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SupermarketTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void dodajArtikl() {
+        Supermarket s = new Supermarket();
+        Artikl  a = new Artikl("telefon",1000,"1234");
+        s.dodajArtikl(a);
+        boolean x = s.dodajArtikl(a);
+        assertTrue(x);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void izbaciArtiklSaKodom() {
+        Supermarket s= new Supermarket();
+        Artikl  a = new Artikl("telefon",1000,"1234");
+        s.dodajArtikl(a);
+        assertEquals(a,s.izbaciArtiklSaKodom("1234"));
     }
 }
