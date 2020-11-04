@@ -11,6 +11,7 @@ public class Supermarket {
     Artikl[] artikli = new Artikl[max];
     brArtikala=0;    
   }
+
   
   public boolean dodajArtikl(Artikl a){
     if(brArtikala == max) return false;
